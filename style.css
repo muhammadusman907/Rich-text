@@ -3,9 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    background-color: #F0F2F5 !important;
+
+@font-face {
+    font-family: 'Kanit-Bold';
+    src: url('font/Kanit-BoldItalic.ttf') format('truetype');
 }
+
+body {
+    background-color: #F0F2F5 !important;
+    font-family: 'Kanit-Bold', sans-serif;
+    font-size: 100%;
+}
+
 /* ============================= */
 /* =========NAVBAR=========== */
 /* ============================= */
@@ -156,7 +165,8 @@ margin-top: 65px;
 /* ================== post ==================== */
 .post{
     /* border: solid; */
-    height: auto;
+    min-height: auto; 
+    /* max-height: 400px; */
     width: 70%;
     margin-top: 20px;
     margin-left: auto;
@@ -211,7 +221,7 @@ margin-top: 65px;
     
 }
 .post-value{
-    height: 200px;
+   min-height: auto; 
     width: 100%;
 }
 .post-icon div{
@@ -267,4 +277,34 @@ margin-top: 65px;
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
+    height:400px ;
+    overflow-y: scroll;
+    margin-top: 15px;
+}
+/* ================================================================= */
+/* ===============================sign up ========================== */
+/* ================================================================= */
+.login-container{
+    margin-top:50px !important;
+    height: 75vh;
+    width: 60%;
+    background-color: #fff;
+    /* border: solid; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+.login-container-child{
+    width: 50%;
+
+}
+.login-container-child button{
+    margin-left: auto;
+}
+/* sweet alert */
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color:  #0d6efd !important;
+    width: 8rem;
 }
