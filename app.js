@@ -1,4 +1,4 @@
-if (location.pathname === "/dashboard.html") {
+if (location.pathname === "/Rich-text/dashboard.html") {
     var setText = document.getElementById("set-text")
     var quill = new Quill('#editor', {
         theme: 'snow'
